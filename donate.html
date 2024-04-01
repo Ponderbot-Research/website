@@ -6,15 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
+<script src="https://www.w3schools.com/lib/w3data.js"></script>
   <body>
-    <div class="topnav">
-      <a class="active" href="#home"><img src="https://raw.githubusercontent.com/Aionia-Epochi/website/main/_resources/logo-transparent_small.png" style="height:3em;filter:invert(1);"></a>
-      <a href="dna.html">Project DNA</a>
-      <a href="chat.html">⬤ Chat</a>
-      <a href="#people">People</a>
-      <a href="donate.html">Donate</a>
-      <a href="#contact">Contact</a> 
-    </div>
+	<div w3-include-html="topnav.html"></div> 
     
     <div id="head" style="background-image:url(https://raw.githubusercontent.com/Aionia-Epochi/website/main/_resources/earth.jpg);height:30vh;"><div class="shadow">
       <center><table><tr><td style="font-size:5em;color:rgba(255,255,255,0.5);padding-right:5vw;padding-top:10vh;">Donate</td><td></tr></table>
@@ -35,12 +29,10 @@
     
     </div>
     
-    
-    <div id="footer"><center>
-    <img src="https://raw.githubusercontent.com/Aionia-Epochi/website/main/_resources/logo-transparent_small.png" style="height:10vh;filter:invert(1);"><br>
-    <h5>Contact Us</h5>
-    Email: aionia.epochi[at]gmail.com | Instagram: @aioniaepochi<br>
-    &copy; Aiónia Epochí, 2024
-    </center></div>
+    <div w3-include-html="footer.html"></div>
+
+        <script>
+w3IncludeHTML();
+</script>
   </body>
 </html>
