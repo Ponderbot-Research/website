@@ -58,7 +58,7 @@ body {
 .warn {
   margin: 1em;
   border:2px red dashed;
-  background-color:rgba(255,0,0,0.5);
+  background-color:rgba(255,0,0,0.3);
   border-radius:20px;
   padding:1em;
   color:black;
