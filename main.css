@@ -1,8 +1,24 @@
+@font-face {
+    font-family: 'delogs';
+    src: url('delogs.ttf');
+}
+
+@font-face {
+    font-family: 'vergilia';
+    src: url('vergilia.ttf');
+}
+
+@font-face {
+    font-family: 'balenyser';
+    src: url('balenyser.otf');
+}
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: balenyser;
   margin:0px;
   padding:0px;
+  background-color:black;
+  color:white;
 }
 
 .topnav {
@@ -45,6 +61,7 @@ body {
   display:block;
   width:100vw;
   background-attachment:fixed;
+  font-family:delogs;
 }
 #footer {
   background-color:black;
@@ -62,7 +79,17 @@ body {
   background-color:rgba(255,0,0,0.3);
   border-radius:20px;
   padding:1em;
-  color:black;
+  color:pink;
   font-weight:900;
   align-content:center;
+}
+
+.shadow
+{
+background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,1));
+height:100%;
+}
+
+h2 {
+color:rgba(255,255,100,1);
 }
