@@ -3,20 +3,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  margin:0px;
+  padding:0px;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgba(0,0,0,0);
+  z-index:1;
+  position:absolute;
+  padding:0.5em 0.5em;
 }
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1em 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -24,22 +28,99 @@ body {
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+  
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: rgba(0,0,0,0);
   color: white;
+  padding:0em;
+}
+#head {
+  margin:0px;
+  padding-top:1em;
+  background-image:url(_resources/earth.jpg);
+  background-size:cover;
+  height:50vh;
+  color:white;
+  top, left, right:0px;
+  z-index:0;
+  position:relative;
+  display:block;
+  width:100vw;
+}
+#footer {
+  background-color:black;
+  color:white;
+}
+
+.content {
+  padding:3em 2em;
+}
+
+.warn {
+  margin: 1em;
+  border:2px red;
+  background-color:rgba(255,0,0,0.5);
+  border-radius:20px;
+  padding:1em;
+  color:black;
+  font-weight:900;
+  align-content:center;
 }
 </style>
 </head>
   <body>
 	  <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
-    <center><h1>Welcome to Aionia Epochi</h1></center>
+      <a class="active" href="#home"><img src="_resources/aionia-epochi_square.png" style="height:3em;"></a>
+      <a href="#projects">Projects</a>
+      <a href="#people">People</a>
+      <a href="#donate">Donate</a>
+      <a href="#contact">Contact</a> 
+    </div>
+    <div id="head">
+      <center><table><tr><td style="font-size:5em;color:rgba(255,255,255,0.5);">Aiónia Epochí</td><td>
+      <!-- Display the countdown timer in an element -->
+<br><br><br>
+<div style="border-left:1px solid white;padding-left:5vw;display:inline-block;"><br><br><span style="font-family:lato;color:white;">Time Since Birth :</span><p id="demo" style="font-weight:900;font-size:45px;font-family:lato;opacity:0.6;color:white;"></p></div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 9, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = now - countDownDate;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = "<span style='opacity:100%;'>" + days + "d</span> <span style='opacity:80%;'>" + hours + "h</span> <span style='opacity:60%;'>"
+  + minutes + "m</span> <span style='opacity:40%;'>" + seconds + "s</span> ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+      </td></tr></table></center>
+    </div>
+    
+    <div class="warn">
+    Website is under maintainance.
+    </div>
+    <div class="content">
     <h2>About Us</h2>
     Aiónia Epochí is a Not For Profit effort from people around the world to help make this world a more peaceful place for humanity. 
     <h2>Our Mission</h2>
@@ -48,5 +129,10 @@ body {
     In a nutshell, our aim is to inspire change, ignite the minds and motivate humanity towards a better future. We strive to light the torch of hope in the minds of all, and keep it lit for all times to come!
     <h2>Our History</h2>
     We started out in 2019 with a single project called the DNA (or Densifying Nature Appreciation initially called the Steem Biodiversity Portal). It was a project aimed at working on cataloguing the global biodiversity using crowd-sourced data. We realised that this project couldn't work well in isolation, and hence we started parallel inter-dependent projects which can grow together and help us walk towards our goals.
+    </div>	
+    <div id="footer"><center>
+    <img src="_resources/aionia-epochi_square.png" style="height:10vh;"><br>
+    &copy; Aiónia Epochí, 2024
+    </center></div>
   </body>
 </html>
