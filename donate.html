@@ -2,59 +2,27 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="./main.css" />
-<base href="https://raw.githubusercontent.com/Aionia-Epochi/website/main/" target="_blank">
+<base href="" target="_blank">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
   <body>
-	  <div class="topnav">
-      <a class="active" href="#home"><img src="_resources/aionia-epochi_square.png" style="height:3em;"></a>
-      <a href="#projects">Projects</a>
+    <div class="topnav">
+      <a class="active" href="#home"><img src="https://raw.githubusercontent.com/Aionia-Epochi/website/main/_resources/logo-transparent_small.png" style="height:3em;filter:invert(1);"></a>
+      <a href="dna.html">Project DNA</a>
+      <a href="chat.html">⬤ Chat</a>
       <a href="#people">People</a>
-      <a href="#donate">Donate</a>
+      <a href="donate.html">Donate</a>
       <a href="#contact">Contact</a> 
     </div>
-    <div id="head" style="background-image:url(_resources/earth.jpg);">
-      <center><table><tr><td style="font-size:5em;color:rgba(255,255,255,0.5);padding-right:5vw;">Aiónia Epochí</td><td>
-      <!-- Display the countdown timer in an element -->
-<br><br><br>
-<div style="border-left:1px solid white;padding-left:5vw;display:inline-block;"><br><br><span style="font-family:lato;color:white;">Time Since Birth :</span><p id="demo" style="font-weight:900;font-size:45px;font-family:lato;opacity:0.6;color:white;"></p></div>
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Sep 9, 2022 15:37:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = now - countDownDate;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = "<span style='opacity:100%;'>" + days + "d</span> <span style='opacity:80%;'>" + hours + "h</span> <span style='opacity:60%;'>"
-  + minutes + "m</span> <span style='opacity:40%;'>" + seconds + "s</span> ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-      </td></tr></table></center>
-    </div>
+    
+    <div id="head" style="background-image:url(https://raw.githubusercontent.com/Aionia-Epochi/website/main/_resources/earth.jpg);height:30vh;"><div class="shadow">
+      <center><table><tr><td style="font-size:5em;color:rgba(255,255,255,0.5);padding-right:5vw;padding-top:10vh;">Donate</td><td></tr></table>
+      </center>
+    </div></div>
     
     <div class="warn">
-    <span style="zoom:150%;"⚠️</span> Website is under maintainance.
+    <span style="zoom:150%;">🔴</span> Website is under maintainance.
     </div>
     
     
@@ -69,7 +37,7 @@ var x = setInterval(function() {
     
     
     <div id="footer"><center>
-    <img src="_resources/black-poster.png" style="height:10vh;"><br>
+    <img src="https://raw.githubusercontent.com/Aionia-Epochi/website/main/_resources/logo-transparent_small.png" style="height:10vh;filter:invert(1);"><br>
     <h5>Contact Us</h5>
     Email: aionia.epochi[at]gmail.com | Instagram: @aioniaepochi<br>
     &copy; Aiónia Epochí, 2024

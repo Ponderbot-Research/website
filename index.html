@@ -2,21 +2,15 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="./main.css" />
-<base href="https://raw.githubusercontent.com/Aionia-Epochi/website/main/" target="_blank">
+<base href="" target="_blank">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
+<script src="https://www.w3schools.com/lib/w3data.js"></script>
   <body>
-    <div class="topnav">
-      <a class="active" href="#home"><img src="_resources/logo-transparent_small.png" style="height:3em;filter:invert(1);"></a>
-      <a href="dna.html">Project DNA</a>
-      <a href="chat.html">⬤ Chat</a>
-      <a href="#people">People</a>
-      <a href="./donate.html">Donate</a>
-      <a href="#contact">Contact</a> 
-    </div>
+<div w3-include-html="topnav.html"></div> 
     
-    <div id="head" style="background-image:url(_resources/earth.jpg);height:90vh;"><div class="shadow">
+    <div id="head" style="background-image:url(https://raw.githubusercontent.com/Aionia-Epochi/website/main/_resources/earth.jpg);height:90vh;"><div class="shadow">
       <center><table><tr><td style="font-size:5em;color:rgba(255,255,255,0.5);padding-right:5vw;padding-top:10vh;">＞ <span style="background-color:white;border-radius:30px;color:rgba(0,0,0,1);padding:10px;">Aiónia Epochí</span></td><td>
       <!-- Display the countdown timer in an element -->
 <br><br><br>
@@ -53,7 +47,7 @@ var x = setInterval(function() {
 }, 1000);
 </script>
       </td></tr></table><br><br><br>
-      <img src="_resources/logo-transparent_small.png" style="filter:invert(1) drop-shadow(0px 0px 40px black);max-height:40vh;">
+      <img src="https://raw.githubusercontent.com/Aionia-Epochi/website/main/_resources/logo-transparent_small.png" style="filter:invert(1) drop-shadow(0px 0px 40px black);max-height:40vh;">
       </center>
     </div>
     </div>
@@ -78,10 +72,14 @@ var x = setInterval(function() {
     We started out in 2019 with a single project called the DNA (or Densifying Nature Appreciation initially called the Steem Biodiversity Portal). It was a project aimed at working on cataloguing the global biodiversity using crowd-sourced data. We realised that this project couldn't work well in isolation, and hence we started parallel inter-dependent projects which can grow together and help us walk towards our goals.
     </div>	
     <div id="footer"><center>
-    <img src="_resources/logo-transparent_small.png" style="height:10vh;filter:invert(1);"><br>
+    <img src="https://raw.githubusercontent.com/Aionia-Epochi/website/main/_resources/logo-transparent_small.png" style="height:10vh;filter:invert(1);"><br>
     <h5>Contact Us</h5>
     Email: aionia.epochi[at]gmail.com | Instagram: @aioniaepochi<br>
     &copy; Aiónia Epochí, 2024
     </center></div>
+    
+    <script>
+w3IncludeHTML();
+</script>
   </body>
 </html>
