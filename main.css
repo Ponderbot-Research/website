@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'delogs';
-    src: url('delogs.ttf');
+    src: url('https://raw.githubusercontent.com/Aionia-Epochi/website/main/delogs.ttf');
 }
 
 @font-face {
     font-family: 'vergilia';
-    src: url('vergilia.ttf');
+    src: url('https://raw.githubusercontent.com/Aionia-Epochi/website/main/vergilia.ttf');
 }
 
 @font-face {
     font-family: 'balenyser';
-    src: url('balenyser.otf');
+    src: url('https://raw.githubusercontent.com/Aionia-Epochi/website/main/balenyser.otf');
 }
 
 body {
