@@ -45,10 +45,10 @@ body {
 }
 
 .topnav a.active {
-  background-color: rgba(0,0,0,0);
   color: white;
   padding:0em;
 }
+
 #head {
   margin:0px;
   padding-top:1em;
@@ -92,4 +92,18 @@ height:100%;
 
 h2 {
 color:rgba(255,255,100,1);
+}
+
+.tag {
+background-color:white;
+color:black;
+border-radius:0.5em;
+margin-left: 1em;
+margin-right: 1em;
+padding: 0.25em;
+}
+
+.subheading {
+font-size: 0.5em;
+font-family: balenyser;
 }
