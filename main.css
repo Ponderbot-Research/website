@@ -112,3 +112,9 @@ font-family: balenyser;
     max-width:30vw;
     justify-content: center;
 }
+
+#donation_methods td img {
+    width: 20vw;
+    border:2px solid white;
+    border-radius: 20px;
+}
