@@ -109,12 +109,18 @@ font-family: balenyser;
 }
 
 #donation_methods td {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top:1vh;
+    padding-bottom: 1vh;
+}
+#donation_methods td {
     max-width:30vw;
     justify-content: center;
 }
 
 #donation_methods td img {
-    width: 20vw;
+    width: 25vw;
     border:2px solid white;
     border-radius: 20px;
 }
