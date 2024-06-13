@@ -1,3 +1,3 @@
-# Aionia Epochi Website
-![](_resources/black-poster.png)
+# Ponderbot Research Website
+![](_resources/logo-transparent.png)
 
