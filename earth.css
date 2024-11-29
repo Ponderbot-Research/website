@@ -1,0 +1,49 @@
+/* Reset margin and padding for a clean slate */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Set the background image and ensure it's fixed */
+body {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a0/EpicEarth-Globespin-tilt-23.4.gif'); /* Replace with the path to your image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white; /* Ensures text stands out on darker backgrounds */
+}
+
+/* Center the content */
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Ensures it takes up the full viewport height */
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1); /* Subtle drop shadow */
+}
+
+/* Styling the text */
+.centered-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.centered-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+#login {
+    background-color: rgba(255, 255, 255, 0.665);
+    color: black;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    border: black solid 2px;
+    border-radius: 1.2em;
+    
+}
