@@ -126,12 +126,12 @@ font-family: balenyser;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
+.hiddenscroll::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.example {
+.hiddenscroll {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
