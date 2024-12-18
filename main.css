@@ -135,3 +135,8 @@ font-family: balenyser;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+code {
+  background-color: white;
+  color: black;
+}
