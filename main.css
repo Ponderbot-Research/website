@@ -19,6 +19,8 @@ body {
   padding:0px;
   background-color:black;
   color:white;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .topnav {
