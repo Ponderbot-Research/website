@@ -127,17 +127,6 @@ font-family: balenyser;
     border-radius: 20px;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.hiddenscroll::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.hiddenscroll {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
 code {
   background-color: white;
   color: black;
