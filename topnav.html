@@ -23,12 +23,10 @@ async function redirectToWebsiteIfNotAlreadyThere(targetUrl) {
   }
 }
 
-// Run the function after w3-include-html is done
-document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
-    redirectToWebsiteIfNotAlreadyThere("https://pdbt.org/login.php");
-  }, 100); // Delay ensures the content is fully loaded
+w3.includeHTML(() => {
+  redirectToWebsiteIfNotAlreadyThere("https://www.pdbt.org");
 });
+
 </script>
 
 <div id="topnav">
