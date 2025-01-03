@@ -1,6 +1,6 @@
 <script>
-function redirectToWebsiteIfNotAlreadyThere(targetUrl) {
-  // Get the current URL of the page
+// Function to redirect to the target website if not already there and the website exists
+async function redirectToWebsiteIfNotAlreadyThere(targetUrl) {
   const currentUrl = window.location.href;
 
   // Check if the user is already on the target website
@@ -13,7 +13,6 @@ function redirectToWebsiteIfNotAlreadyThere(targetUrl) {
     // Check if the target website is online by sending a HEAD request
     const response = await fetch(targetUrl, { method: 'HEAD' }); // Only check the headers
     if (response.ok) {
-      // Redirect if the target website is online
       console.log("Website is online. Redirecting...");
       window.location.href = targetUrl;
     } else {
@@ -24,9 +23,14 @@ function redirectToWebsiteIfNotAlreadyThere(targetUrl) {
   }
 }
 
-// Usage: Replace 'https://example.com' with the desired website URL
-redirectToWebsiteIfNotAlreadyThere('https://pdbt.org');
+// Run the function after w3-include-html is done
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    redirectToWebsiteIfNotAlreadyThere("https://pdbt.org/login.php");
+  }, 100); // Delay ensures the content is fully loaded
+});
 </script>
+
 <div id="topnav">
       <a class="active" href="https://ponderbot.org"><img src="https://raw.githubusercontent.com/Ponderbot-Research/website/main/_resources/logo-transparent_small.png" style="height:3em;filter:invert(1);"></a>
       <a href="https://ponderbot.org/awareness.html">Awareness</a>
