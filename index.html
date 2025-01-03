@@ -80,5 +80,36 @@ var x = setInterval(function() {
     <script>
 w3IncludeHTML();
 </script>
+
+	    <script>
+// Function to redirect to the target website if not already there and the website exists
+async function redirectToWebsiteIfNotAlreadyThere(targetUrl) {
+  const currentUrl = window.location.href;
+
+  // Check if the user is already on the target website
+  if (currentUrl.startsWith(targetUrl)) {
+    console.log("User is already on the target website. No redirection needed.");
+    return;
+  }
+
+  try {
+    // Check if the target website is online by sending a HEAD request
+    const response = await fetch(targetUrl, { method: 'HEAD' }); // Only check the headers
+    if (response.ok) {
+      console.log("Website is online. Redirecting...");
+      window.location.href = targetUrl;
+    } else {
+      console.error(`Website is not accessible. Status: ${response.status}`);
+    }
+  } catch (error) {
+    console.error("Error accessing the website:", error);
+  }
+}
+
+w3IncludeHTML(() => {
+  redirectToWebsiteIfNotAlreadyThere("https://www.pdbt.org");
+});
+
+</script>
   </body>
 </html>
